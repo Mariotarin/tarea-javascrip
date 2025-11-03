@@ -1,41 +1,55 @@
 // 1. Create a function that swaps the values of two variables and returns them.
 function swapValues(a, b) {
-
+    let swapsArray = [b,a] 
+    return swapsArray
 }
 
 // 2. Create a function that greets a person using their first and last name.
 function greet(firstName, lastName) {
-
+    return `Hello, ${firstName} ${lastName}`;
 }
 
 // 3. Create a function that calculates the area of a triangle.
 function triangleArea(base, height) {
-
+    return (base * height) / 2;
 }
 
 // 4. Create a function that converts Celsius to Fahrenheit.
 function celsiusToFahrenheit(celsius) {
-
+    let Fahrenheit = (celsius * 9/5) + 32
+    return Fahrenheit
 }
 
 // 5. Create a function that returns the remainder of dividing two numbers.
 function getRemainder(a, b) {
-
+    return a % b
 }
 
 // 6. Create a function that checks if a number is positive, negative, or zero.
 function checkNumber(num) {
-
+    if (num >0) {
+        return "Positive";
+    } else if (num <0) {
+        return "Negative";
+    } else if (num === 0) {
+        return "Zero";
+    }
 }
 
 // 7. Create a function that determines if a number is even or odd.
 function isEven(num) {
-
-}
-
+    if (num % 2 === 0) {
+        return "Even" ;
+    } else (num % 2 == 1)
+        return "Odd"
+    }
 // 8. Create a function that returns the greater of two numbers.
 function maxOfTwo(a, b) {
-
+    if (a > b) {
+        return a;
+    } else {
+        return b
+    }
 }
 
 // 9. Create a function that classifies a person’s age category.
@@ -47,14 +61,19 @@ function maxOfTwo(a, b) {
  - "Senior": 65+
 */
 function ageCategory(age) {
-
+      if (age <= 12) {
+    return "Child";
+  } else if (age >= 13 && age <= 17) {
+    return "Teen";
+  } else if (age >= 18 && age <= 64) {
+    return "Adult";
+  } else (age >= 65) 
+    return "Senior";
 }
-
 // 10. Create a function that validates a password.
 function checkPassword(password) {
-
+    
 }
-
 // 11. Create a function that counts the number of characters in a text.
 function countChars(text) {
 
